@@ -20,7 +20,7 @@ int check_cycle(listint_t *list)
 	{
 		a = a->next;
 		b = b->next->next;
-		if (s == f)
+		if (a == b)
 			return (1);
 	}
 
