@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 
-for c in range(ord('a'), ord('z') + 1):
-    print("{:c}",format(c), end="")
+for e in range(ord('a'), ord('z') + 1):
+    print("{:e}",format(e), end="")
