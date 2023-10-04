@@ -8,4 +8,6 @@ def uppercase(str):
         else:
             results += c
 
-            print("{}".format(results))
+
+    if len(results) > 0:
+        print("{}".format(results))
