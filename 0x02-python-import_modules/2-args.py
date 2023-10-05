@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-import sys
-num = len(sys.argv) -1
-def pluralize(num):
+if __name__ == "__main__":
+    import sys
+    num = len(sys.argv)
     if num == 1:
-        return "argument"
+        print("{} arguments.".format(num - 1))
+    elif num == 2:
+        print("{} argument:".format(num - 1))
     else:
-        return "arguments"
+        print("{} arguments:".format(num - 1))
 
-print("{} {}:".format(num, pluralize(num)))
-
-for i in range(1, num + 1):
-    print("{}: {}".format(i, sys.argv[i]))
+    for i in range(1, num):
+        print("{}: {}".format(i, sys.argv[i]))
