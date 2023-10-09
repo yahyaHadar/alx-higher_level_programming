@@ -6,13 +6,13 @@
 #include <unistd.h>
 
 /**
- * struct listint_s - linked list
- *
+ * struct listint_s - singly linked list
  * @n: the integer
- * @next: points to go to the next node
+ * @next: points to the next node
  *
- * Description: singly linked list node structure for project
-*/
+ * Description: singly linked list node structure
+ * for project
+ */
 typedef struct listint_s
 {
     int n;
