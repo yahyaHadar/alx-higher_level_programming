@@ -1,0 +1,91 @@
+The ``5-text_indentation`` module
+============================
+
+Using ``text_indentation``
+---------------------
+
+Importing function from the module:
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+# Test case with basic formatting
+>>> text_indentation("Hello. This is a test.")
+Hello.
+<BLANKLINE>
+This is a test.
+<BLANKLINE>
+
+# Test case with a word and spaces around it
+>>> text_indentation("    Holberton    ")
+Holberton
+
+# Test case with a word and a special character at the end
+>>> text_indentation("    Hello    .")
+Hello.
+<BLANKLINE>
+
+# Test case with all special characters
+>>> text_indentation(".?:")
+.
+<BLANKLINE>
+?
+<BLANKLINE>
+:
+<BLANKLINE>
+
+# Test case with None (should raise TypeError)
+>>> text_indentation(None)
+Traceback (most recent call last):
+  ...
+TypeError: text must be a string
+
+# Test case with a number (should raise TypeError)
+>>> text_indentation(10)
+Traceback (most recent call last):
+  ...
+TypeError: text must be a string
+
+# Test case with a text containing special characters
+>>> text_indentation("Betty: Holberton? Python is. cool   ")
+Betty:
+<BLANKLINE>
+Holberton?
+<BLANKLINE>
+Python is.
+<BLANKLINE>
+cool
+
+# Test case with a single character (number)
+>>> text_indentation('2')
+2
+
+# Test case with an empty string
+>>> text_indentation('    ')
+
+# Test case with a newline character
+>>> text_indentation('\n')
+<BLANKLINE>
+
+# Test case with special characters and newlines
+>>> text_indentation('\n.\n?\n:')
+<BLANKLINE>
+.
+<BLANKLINE>
+<BLANKLINE>
+?
+<BLANKLINE>
+<BLANKLINE>
+:
+<BLANKLINE>
+
+# Test case with spaces and a newline
+>>> text_indentation("   \n")
+<BLANKLINE>
+
+# Test case with spaces and a newline
+>>> text_indentation("   \n   ")
+<BLANKLINE>
+
+# Test case with spaces and a newline
+>>> text_indentation("\n   ")
+<BLANKLINE>
