@@ -1,0 +1,10 @@
+
+
+
+
+
+
+linked list 
+head:wq
+
+print(head->n)
